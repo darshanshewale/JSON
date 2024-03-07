@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="js.json" />
+  </head>
+  <body>
+    <h1>JSON</h1>
+    <pre>
+        JSON stands for JavaScript Object Notation
+
+        JSON is a text format for storing and transporting data
+
+        JSON is "self-describing" and easy to understand
+
+        If you parse the JSON string with a JavaScript program, you can access the data as an object:
+
+
+    </pre>
+
+    <h1>Why Use JSON?</h1>
+    <pre>
+        The JSON format is syntactically similar to the code for creating JavaScript objects.
+         Because of this, a JavaScript program can easily convert JSON data into JavaScript objects.
+
+        Since the format is text only, JSON data can easily be sent between computers, and used by any programming language.
+
+        JavaScript has a built in function for converting JSON strings into JavaScript objects:json.parse()
+
+        JavaScript also has a built in function for converting an object into a JSON string:json.stringfy()
+    </pre>
+
+    <h1>JSON Syntax</h1>
+    <pre>
+        JSON syntax is derived from JavaScript object notation syntax:
+
+        Data is in name/value pairs
+        Data is separated by commas
+        Curly braces hold objects
+        Square brackets hold arrays
+        In JSON, keys must be strings, written with double quotes:
+
+
+    </pre>
+
+    <h1>JSON values</h1>
+    <pre>
+        In JSON, values must be one of the following data types:
+
+        a string
+        a number
+        an object
+        an array
+        a boolean
+        null
+    </pre>
+
+    <h1>JSON vs XML</h1>
+
+    <pre>
+        JSON is Like XML Because
+        Both JSON and XML are "self describing" (human readable)
+        Both JSON and XML are hierarchical (values within values)
+        Both JSON and XML can be parsed and used by lots of programming languages
+        Both JSON and XML can be fetched with an XMLHttpRequest
+
+        JSON is Unlike XML Because
+        JSON doesn't use end tag
+        JSON is shorter
+        JSON is quicker to read and write
+        JSON can use arrays
+
+
+        XML is much more difficult to parse than JSON.
+        JSON is parsed into a ready-to-use JavaScript object.
+
+        For AJAX applications, JSON is faster and easier than XML:
+
+        Using XML
+
+        Fetch an XML document
+        Use the XML DOM to loop through the document
+        Extract values and store in variables
+        Using JSON
+
+        Fetch a JSON string
+        JSON.Parse the JSON string
+    </pre>
+
+    <h1>JSON.parse()</h1>
+
+    <pre>
+        A common use of JSON is to exchange data to/from a web server.
+
+        When receiving data from a web server, the data is always a string.
+        
+        Parse the data with JSON.parse(), and the data becomes a JavaScript object.
+    </pre>
+
+    <p id="demo"></p>
+
+    <h1>Array as JSON</h1>
+    <pre>
+        When using the JSON.parse() on a JSON derived from an array, the method will return a JavaScript array,
+        instead of a JavaScript object.
+
+    </pre>
+
+    <h1>Exceptions</h1>
+    <h2>Parsing Dates</h2>
+    <pre>
+    Date objects are not allowed in JSON.
+
+    If you need to include a date, write it as a string.
+
+    You can convert it back into a date object later:
+    </pre>
+
+    <h2>Parsing Functions</h2>
+    <pre>
+
+    Functions are not allowed in JSON.
+
+    If you need to include a function, write it as a string.
+
+    You can convert it back into a function later:
+    </pre>
+
+    <h1>JSON.stringify()</h1>
+
+    A common use of JSON is to exchange data to/from a web server. When sending
+    data to a web server, the data has to be a string. Convert a JavaScript
+    object into a string with JSON.stringify().
+
+    <h1>Storing Data</h1>
+
+    <h1 id="d"></h1>
+    <pre>
+When storing data, the data has to be a certain format, and regardless of where you choose to store it, 
+    text is always one of the legal formats.</pre
+    >
+
+    <h1>Exceptions</h1>
+    <h2>Stringify Dates</h2>
+    <pre>
+In JSON, date objects are not allowed. The JSON.stringify() function will convert any dates into strings.
+
+    </pre>
+  </body>
+</html>
